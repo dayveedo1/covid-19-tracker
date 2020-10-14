@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "App1": {
+    "covid19-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/App1",
+            "outputPath": "dist/covid19-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "App1:build"
+            "browserTarget": "covid19-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "App1:build:production"
+              "browserTarget": "covid19-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "App1:build"
+            "browserTarget": "covid19-app:build"
           }
         },
         "test": {
@@ -110,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "App1:serve"
+            "devServerTarget": "covid19-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "App1:serve:production"
+              "devServerTarget": "covid19-app:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "App1"
+  "defaultProject": "covid19-app"
 }
